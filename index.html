@@ -1,151 +1,98 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bsaavedrabo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/89317189?v=4" type="image/png"></head>
 
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/89317189?v=4) center;"></div>
-      <div id="username"><span style="display:block;">Belen Saavedra </span><a href="https://github.com/bsaavedrabo">@bsaavedrabo</a></div>
-      <div id="userbio" style="display: none;">undefined</div>
-      <div id="about">
-                <span style="display:block;"><i class="fas fa-users"></i> &nbsp; Berea College</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; KY, USA </span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-                <div class="socials">
-                <span style="display:none !important;"><a href="https://www.twitter.com/null" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:block;"><a href="https://www.linkedin.com/in/belensaavedra/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:block;"><a href="https://medium.com/@belensaavedra.bo" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
-                </div>
-                </div>
-    </div>
 
-    <div id="display">
-      <div id="aaa">
-        <h1>About.</h1> </div>
-        <h3> 
+<!DOCTYPE html> 
 
-          <meta charset="UTF-8">
-          Hello there! I'm Belen and I'm interested in using technology to create sustainable solutions. &#127758;</h3>
-          
-        <h3>I was born and raised in the beautifully diverse country of Bolivia (the heart of South America). My surroundings inspired me to be curious about nature and appreciate it at a different level. I have witnessed how climate change is disproportionally affecting different groups of people across countries. I'm working in my community to develop effective and sustainable solutions for real-life problems as the chapter Lead for the Google Developers Student Club at Berea College.
-        </h3>
-       <h3>Taking college classes made me realize I enjoy building solutions and learning from others. I found the perfect environment in the Computer Science department at my college, where I also work as a Teaching Assistant.
-      </h3>
-        <h3> Above all, my main goal as a college student is to become a more effective problem-solver and team player. 
-        </h3>
+<body style="background-color:#fdffff;">
 
-        <h3>Outside of academics, I LOVE learning (natural) languages 🇧🇷🇩🇪🇧🇴, dancing Argentinian cumbia, and petting dogs.</h3>
-        
-    </div>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Almarai|Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title> Anna Fang </title>
+    <meta name="description" content="PhD Student at Carnegie Mellon University, SCS, HCII." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+  </head>
+  
+  <div class="tab" >
+    <button class="tabs active" onclick="showNewTab(event, 'home')">Home</button>
+    <button class="tabs" onclick="showNewTab(event, 'about me')">About Me</button>
+    <button class="tabs" onclick="showNewTab(event, 'projects')">Projects</button>
+    <button class="tabs" onclick="showNewTab(event, 'research')">Research</button>
   </div>
+  
+  
+  <div style="margin:auto;width:900px;vertical-align:middle;">
+    <div id="home" class="body">
+      <div class="profile-crop">
+        <img src="belenpic.jpg" alt="avatar">
+      </div>
+      
+  
+      <h2>
+        Hello there! I'm Belen and I'm interested in using technology to create sustainable solutions. 🌎
+      <br><br>
+        I am a Teaching Assistant and chapter lead of the Google Developers Student Club at my college. 
 
-    <div id="display">
-      <div id="work">
-        <h1> Projects.</h1>
-        <div class="projects" id="work_section">
-            
-                        <a href="https://github.com/bsaavedrabo/COVIDvolution-CS226.git" target="_blank">
-                        <section>
-                            <div class="section_title">Covidvolution</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; python</span>
-                         
-                            </div>
-                        </section>
-              
-                         
-                     
-      <div id="forks" style="display:none;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
-      </div>
-      <div id="blog_section">
-        <h1>Blog.</h1>
-        <div id="blogs"></div>
-      </div>
-      <div id="footer">
-        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      <br><br>
+      <i>saavedrariosm@berea.edu</i>
+      </h2>
+    </div>
+  
+    <div id="about me" class="body" style="display:none;">
+      <h2 style="margin-top:100px;">
+        Growing up in Bolivia, my surroundings inspired me to be curious about nature and appreciate it at a different level. 
+      Throughout my life, I have observed the disproportionate impact of climate change on various communities across countries. 
+      In my role as the chapter Lead for the <span class = "emphasis"> Google Developers Student Club at Berea College </span>, 
+      I aim to be create a community that fosters problem-solving.
+      </h2>
+      <div class="profile-crop">
+        <img src="bol1.png" alt="avatar">
       </div>
     </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
 
-    <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
-    </script>
+    <div id="projects" class="body" style="display:none;">
+      <h2 style="margin-top:-20px;">
+       to be added soon, fetch from github.
+        
+      </h2>
+    </div>
+  
+    <div id="research" class="body" style="display:none;">
+      <h2 style="margin-top:50px;">
+        - Uncertainty quantification, NCAR.
+        <br><br>
+        - Behavioral Ecology, UC San Diego.
+      </h2>
+    </div>
   
 
-</body></html>
+  </div>
+  
+  <script>
+  
+  var md = new MobileDetect(window.navigator.userAgent);
+  if (md.mobile() || md.tablet()) {
+      document.location.href = 'mobile.html';
+  }
+  
+  function showNewTab(event, newTab) {
+    var i, body, tabs;
+  
+    body = document.getElementsByClassName("body");
+    for (i = 0; i < body.length; i++) {
+      body[i].style.display = "none";
+    }
+  
+    tabs = document.getElementsByClassName("tabs");
+    for (i = 0; i < tabs.length; i++) {
+      tabs[i].className = tabs[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(newTab).style.display = "block";
+    event.currentTarget.className += " active";
+  }
+  
+  </script>
+  
+  </html>
