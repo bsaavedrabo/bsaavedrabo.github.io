@@ -14,9 +14,12 @@ body {
 .sidebar {
   width: 20%;
   background-color: whitesmoke;
-  color: white;
+  color: black;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sidebar h2 {
@@ -26,6 +29,7 @@ body {
 .sidebar ul {
   list-style: none;
   padding: 0;
+  color: #020202;
 }
 
 .sidebar ul li {
@@ -42,6 +46,37 @@ body {
   color: #3498db;
 }
 
+/* Social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fa {
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.fa-linkedin {
+  background: #0a0a0a;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 /* Main content styles */
 .main-content {
   width: 80%;
@@ -49,14 +84,15 @@ body {
   box-sizing: border-box;
 }
 
+/* Gallery section for research projects */
 .gallery {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between thumbnails */
 }
 
+/* Individual project thumbnails */
 .thumbnail {
-  width: 200px;
   text-align: center;
 }
 
@@ -64,44 +100,28 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
 }
 
 .thumbnail h3 {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: #2c3e50;
 }
 
-.thumbnail:hover img {
-  transform: scale(1.05);
+.thumbnail h6 {
+  font-size: 14px;
+  color: #555;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 80px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+/* Responsive Design: 2 columns for medium screens, 1 column for small screens */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: .5;
-}
-
-
-/*  */
-.fa-linkedin {
-  background: #0a0a0a;
-  color: white;
-  border-radius: 50%;
-}
-
-
-.fa-github {
-  background: #000000;
-  color: white;
-  
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
 }
