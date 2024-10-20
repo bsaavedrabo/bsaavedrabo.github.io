@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belen </title>
-  <title> Saavedra</title>
+  <title>Belen Saavedra</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="script.js"></script>
-  <!-- Add font awesome icons -->
- 
-
+  <script src="script.js" defer></script>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="container">
@@ -21,13 +17,12 @@
       <ul>
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="cv.html">Curriculum Vitae</a></li>
-
-       
+        
         <b>Summer Research Internships</b>
         <li>2024 - REUSE at Carnegie Mellon</li>
         <li>2023 - SiParCS at the National Center for Atmospheric Research</li>
         <li>2022 - ENLACE at UC San Diego</li>
-    
+        
         <b>Leadership Positions</b>
         <li>Founding president of the Society of Hispanic Professional Engineers at Berea</li>
         <li>President of Google Developers Student Club</li>
@@ -38,6 +33,7 @@
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/belensaavedra/" target="_blank" class="fa fa-linkedin"></a>
         <a href="https://github.com/bsaavedrabo" target="_blank" class="fa fa-github"></a>
+        <a href="mailto:belensaavedra.bo@gmail.com" target="_blank" class="fa fa-email"></a>
       </div>
     </div>
     
@@ -45,45 +41,50 @@
     <div class="main-content">
       <h2 id="projects"> Research Projects</h2>
       <div class="gallery">
-        <!-- Thumbnail 1 -->
+        <!-- Social App Project-->
         <div class="thumbnail">
-          <img src="image.png" alt="Project 1">
-          <h3>Social App</h3>
-          <h6> Capstone project and Independent study course</h6>
+          <img src="assets/images/mobileapp.png" alt="Social App for College Students" onclick="openModal('social-app')">
+          <h3>Social App for College Students</h3>
+          <h6>Capstone project and Independent study course</h6>
+          <!-- Tags -->
+          <p><span>#collegestudents</span> <span>#HCI</span> <span>#design</span> <span>#development</span></p>
         </div>
-        <!-- Thumbnail 1 -->
+
+        <!-- Other Projects -->
         <div class="thumbnail">
-          <img src="image.png" alt="Project 1">
+          <img src="assets/images/mm.png" alt="Memory Museum">
           <h3>Memory Museum</h3>
-          <h6> Constructing the memory museum as a research asisstant</h6>
-
+          <h6>Constructing the memory museum as a research assistant</h6>
         </div>
-        <!-- Thumbnail 2 -->
         <div class="thumbnail">
-          <img src="image.png" alt="Project 2">
+          <img src="assets/images/dementia.png" alt="Dementia Project">
           <h3>Dementia Project</h3>
-          <h6> Designed interfaces for dementia patients and caregivers</h6>
-
+          <h6>Designed interfaces for dementia patients and caregivers</h6>
         </div>
-        
-        <!-- Thumbnail 3 -->
-        <div class="thumbnail">
-          <img src="image.png" alt="Project 2">
+        <!-- <div class="thumbnail">
+          <img src="image.png" alt="Caraclock">
           <h3>Caraclock</h3>
-          <h6> Built a digital photo album by conducting research through design</h6>
-
-        </div>
-
-        <!-- Thumbnail 3 -->
+          <h6>Built a digital photo album by conducting research through design</h6>
+        </div> -->
         <div class="thumbnail">
-          <img src="image.png" alt="Project 2">
-          <h3>Prompt enignereing </h3>
-          <h6> Built a digital photo album by conducting research through design</h6>
-
+          <img src="assets/images/reqelit.png" alt="Prompt Engineering">
+          <h3>Enhancing Model Requirements Elicitation with Generative AI</h3>
+          <h6>Built a digital photo album by conducting research through design</h6>
         </div>
+       
       </div>
     </div>
   </div>
   
+  <!-- Modal Section -->
+  <div id="social-app" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('social-app')">&times;</span>
+      <h2>Social App for College Students</h2>
+      <p>This social app was developed to help college students collaborate and share resources. It was part of my capstone project and independent study...</p>
+      <!-- More content can go here -->
+    </div>
+  </div>
+
 </body>
 </html>
