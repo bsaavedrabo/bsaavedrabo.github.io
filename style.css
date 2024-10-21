@@ -1,6 +1,9 @@
 /* General styles */
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
@@ -104,26 +107,40 @@ body {
 }
 
 .thumbnail img {
-  width: 100%;
-  height: auto;
+  width: 450px; 
+  height: 300px;
+  transition: filter 0.3s ease;
   border-radius: 8px;
 }
-
+.thumbnail img:hover {
+  filter: brightness(0.9);
+}
 .thumbnail h3 {
-  margin-top: 5px;
+  margin-top: 5px; 
+  margin-bottom: 2px; 
   font-size: 18px;
   color: #2c3e50;
-  margin-bottom: 0px;
-  line-height: 1.2;
+  line-height: 1.2; 
 
 }
 
 .thumbnail h6 {
   font-size: 14px;
   color: #555;
+  margin-top: 2px 0;
+  margin-bottom: 2px; 
+  line-height: 1.2;
 }
 
-/* Responsive Design: 2 columns for medium screens, 1 column for small screens */
+.thumbnail p {
+  margin: 5px 0; 
+  line-height: 1.2; }
+
+.thumbnail span {
+  margin-right: 5px; 
+}
+
+
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
@@ -136,7 +153,6 @@ body {
   }
 }
 
-/* Modal styles */
 .modal {
   display: none;
   position: fixed;
@@ -177,4 +193,9 @@ span {
   padding: 2px 5px;
   margin-right: 5px;
   font-size: 0.9em;
+}
+
+.nombre{
+  font-family: "Dancing Script", cursive;
+  font-size: 180;
 }
