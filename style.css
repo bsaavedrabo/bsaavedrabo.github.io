@@ -1,5 +1,4 @@
 /* General styles */
-
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -10,7 +9,8 @@ body {
 
 .container {
   display: flex;
-  height: 100vh;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -22,12 +22,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  top: 0;
-  right: 0; 
+  position: relative; /* No absolute positioning */
+  z-index: 2; /* Keep sidebar above content */
 }
-
-
 
 .sidebar h2 {
   color: #020202;
@@ -107,52 +104,68 @@ body {
 }
 
 .thumbnail img {
-  width: 450px; 
-  height: 300px;
+  width: 100%; /* Ensure images scale with screen size */
+  height: auto;
   transition: filter 0.3s ease;
   border-radius: 8px;
 }
+
 .thumbnail img:hover {
   filter: brightness(0.9);
 }
+
 .thumbnail h3 {
-  margin-top: 5px; 
-  margin-bottom: 2px; 
+  margin-top: 5px;
+  margin-bottom: 2px;
   font-size: 18px;
   color: #2c3e50;
-  line-height: 1.2; 
-
+  line-height: 1.2;
 }
 
 .thumbnail h6 {
   font-size: 14px;
   color: #555;
-  margin-top: 2px 0;
-  margin-bottom: 2px; 
+  margin-top: 2px;
+  margin-bottom: 2px;
   line-height: 1.2;
 }
 
 .thumbnail p {
-  margin: 5px 0; 
-  line-height: 1.2; }
-
-.thumbnail span {
-  margin-right: 5px; 
+  margin: 5px 0;
+  line-height: 1.2;
 }
 
+.thumbnail span {
+  margin-right: 5px;
+}
 
 @media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  .container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on smaller screens */
+    position: relative; /* Make sure sidebar remains part of the flow */
+    margin-bottom: 20px; /* Add some space below the sidebar */
+  }
+
+  .main-content {
+    width: 100%; /* Main content takes full width */
   }
 }
 
 @media (max-width: 480px) {
   .gallery {
-    grid-template-columns: 1fr; /* 1 column for small screens */
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .sidebar ul li a {
+    font-size: 14px;
   }
 }
 
+/* Modal styling */
 .modal {
   display: none;
   position: fixed;
@@ -195,7 +208,7 @@ span {
   font-size: 0.9em;
 }
 
-.nombre{
+.nombre {
   font-family: "Dancing Script", cursive;
   font-size: 180;
 }
