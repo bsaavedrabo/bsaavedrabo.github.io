@@ -145,9 +145,10 @@ body {
   }
 
   .sidebar {
-    width: 100%; /* Sidebar takes full width on smaller screens */
-    position: relative; /* Make sure sidebar remains part of the flow */
-    margin-bottom: 20px; /* Add some space below the sidebar */
+    width: 100%; 
+    position: relative; 
+    margin-bottom: 20px; 
+    background-color: green;
   }
 
   .main-content {
@@ -210,5 +211,11 @@ span {
 
 .nombre {
   font-family: "Dancing Script", cursive;
-  font-size: 180;
+  font-size: 350;
+}
+
+.pp{
+  float: left;
+  border-radius: 50%;
+  
 }
