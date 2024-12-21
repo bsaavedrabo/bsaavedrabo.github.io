@@ -1,4 +1,3 @@
-/* General styles */
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -15,15 +14,15 @@ body {
 
 .sidebar {
   width: 20%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(236, 236, 236);
   color: black;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative; /* No absolute positioning */
-  z-index: 2; /* Keep sidebar above content */
+  position: relative; 
+  z-index: 2; 
 }
 
 .sidebar h2 {
@@ -63,7 +62,7 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  font-size: 200px;
+  font-size: 10px;
 }
 
 .fa-linkedin {
@@ -93,54 +92,64 @@ body {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between thumbnails */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
 }
 
+
 .thumbnail {
-  text-align: center;
+  width: 300px; 
+  height: 400px; 
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px; 
+  background-color: #fff; 
+  text-align: center; 
+  overflow: hidden; 
 }
 
 .thumbnail img {
-  width: 100%; /* Ensure images scale with screen size */
-  height: auto;
-  transition: filter 0.3s ease;
-  border-radius: 8px;
-}
-
-.thumbnail img:hover {
-  filter: brightness(0.9);
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: cover; 
+  border-radius: 5px; 
 }
 
 .thumbnail h3 {
-  margin-top: 5px;
-  margin-bottom: 2px;
   font-size: 18px;
-  color: #2c3e50;
-  line-height: 1.2;
+  margin: 10px 0;
 }
 
 .thumbnail h6 {
   font-size: 14px;
-  color: #555;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  line-height: 1.2;
+  color: #555; 
 }
 
 .thumbnail p {
-  margin: 5px 0;
-  line-height: 1.2;
+  font-size: 12px;
+  color: #777; 
 }
 
 .thumbnail span {
-  margin-right: 5px;
+  display: inline-block;
+  margin: 5px 3px;
+  padding: 3px 8px;
+  background-color: #e0e0e0; 
+  border-radius: 3px;
+  font-size: 12px;
 }
+
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack sidebar and content vertically */
+    flex-direction: column; 
   }
 
   .sidebar {
@@ -151,13 +160,13 @@ body {
   }
 
   .main-content {
-    width: 100%; /* Main content takes full width */
+    width: 100%; 
   }
 }
 
 @media (max-width: 480px) {
   .gallery {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr; 
   }
 
   .sidebar ul li a {
