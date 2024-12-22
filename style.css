@@ -29,6 +29,18 @@ body {
   color: #020202;
 }
 
+.ul{
+  font-size: 20px;
+}
+
+.research-details ul {
+  font-size: 12px; 
+  color: #555;
+  margin-left: -20px;
+  margin-bottom: 15px;
+  
+}
+
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -100,8 +112,10 @@ body {
 
 
 .thumbnail {
-  width: 300px; 
-  height: 400px; 
+  width: 350px; 
+  padding: 15px;
+  height: 600px; 
+  box-sizing: border-box; 
   border: 2px solid #ccc; 
   border-radius: 10px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -111,8 +125,9 @@ body {
   align-items: center; 
   padding: 15px; 
   background-color: #fff; 
-  text-align: center; 
+  text-align: left; 
   overflow: hidden; 
+  
 }
 
 .thumbnail img {
@@ -135,6 +150,14 @@ body {
 .thumbnail p {
   font-size: 12px;
   color: #777; 
+}
+
+.thumbnail h3, 
+.thumbnail h4, 
+.thumbnail h6, 
+.thumbnail p {
+  margin: 4px 0; 
+  
 }
 
 .thumbnail span {
