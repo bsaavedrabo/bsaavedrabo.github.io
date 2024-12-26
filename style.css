@@ -114,7 +114,7 @@ body {
 .thumbnail {
   width: 350px; 
   padding: 15px;
-  height: 550px; 
+  height: 520px; 
   box-sizing: border-box; 
   border: 2px solid #ccc; 
   border-radius: 10px; 
@@ -197,7 +197,6 @@ body {
   }
 }
 
-/* Modal styling */
 .modal {
   display: none;
   position: fixed;
